@@ -11,13 +11,13 @@
         let url = document.getElementById('inp').value;
 	              fetch(url)
           .then(res => res.text())
-          .then(document.getElementById('inp').value = res))
+          .then(document.getElementById('inp').value => res))
       }
 		//let response = await fetch(url);
        // document.getElementById('inp').value = "";
 	//	let text = await response.text(); 
        // document.getElementById('inp').value = text;
-      }
+     // }
       
    </script>
  </body>
