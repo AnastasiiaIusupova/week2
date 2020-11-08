@@ -10,8 +10,10 @@
       function myFunction(){
         let url = document.getElementById('inp').value;
 	              fetch(url)
-          .then(res => res.text())
-          .then(document.getElementById('inp').value => res))
+	                   .then((response) => response.text())
+                           .then((data) => document.getElementById('inp').value);
+         // .then(res => res.text())
+        //  .then(document.getElementById('inp').value => res))
       }
 		//let response = await fetch(url);
        // document.getElementById('inp').value = "";
