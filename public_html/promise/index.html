@@ -1,4 +1,4 @@
 function task(x){
-  return x  => new Promise((resolve,reject) => x > 18 ? resolve('yes') : reject('no'));
+return x < 18 ? Promise.resolve('yes') : Promise.reject('no');
 }
 
