@@ -1,4 +1,4 @@
 function task(x){
-  return x  => new Promise((resolve,reject) => x < 18 ? reject('Недостаточно прав у возраста' + x) :resolve('Вы полноправный гражданин!'));
+  return x  => new Promise((resolve,reject) => x > 18 ? resolve('yes') : reject('no'));
 }
 
